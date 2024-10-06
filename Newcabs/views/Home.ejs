@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online cab booking</title>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCAGPNVBLaEZQPnrUDHwhDnFvdPIxCqKs&libraries=places&callback=initMap" async defer></script>
+
+</head>
+<link rel="stylesheet" href="css/Home.css">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />    
+
+<body>
+
+    <nav>
+        <ul>
+            <a href="#" class="brands" id="menus" onclick="openNav()"><span
+                    class="material-symbols-outlined">menu</span></a>
+            <li class="brand"><img
+                    src="https://t3.ftcdn.net/jpg/04/08/78/12/360_F_408781239_SioZtkPoH8lRZuL0MHG4oa2C2IyHJx0c.jpg"
+                    alt="RideEasy" width=10> RideEasy</li>
+            <li class="brand1"><a href="#" onclick="goToHomepage()">Home</a></li>
+            <li class="brand1"><a href="#" onclick="goToAboutpage()">About</a></li>
+            
+            <li class="brand1">
+                <div class="dropdown">
+                <a href="#" class="services">Services</a>
+                <a href="#" class="drop">
+                    <span class="material-symbols-outlined answers">arrow_drop_down</span>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-content1" onclick="goToLoginpage()"><p>Book a Car</p></a>
+                </div>
+            </div>
+            </li>
+                     
+            <li class="brand1"><a href="#" id="spaces" onclick="goToContactpage()">Contact Us</a></li>
+            <div class="book"><a href="#" class="Booked" onclick="goToLoginpage()">Login</a></div>
+        </ul>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <ul>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="#" onclick="goToHomepage()"><span class="material-symbols-outlined">home</span>Home</a></li>
+            <li><a href="#" onclick="goToLoginpage()"><span class="material-symbols-outlined">login</span> Login</a></li>
+            <li><a href="#" onclick="goToLoginpage()"><span class="material-symbols-outlined">directions_car</span> Book a car</a></li>
+            <li><a href="#" onclick="goToDriverLoginpage()"><span class="material-symbols-outlined">id_card</span> Driver Login</a>
+            <li><a href="#" onclick="goToAboutpage()"><span class="material-symbols-outlined">info</span> About Us</a></li>
+            <li><a href="#" onclick="goToContactpage()"><span class="material-symbols-outlined">contact_support</span> Contact Us</a></li>
+        </ul>
+    </div>
+    <h2 class="Intro">Welcome to RideEasy</h2>
+    <div class="search">
+        <input class="autocomplete source" placeholder="Enter your source" type="text">
+        <input class="autocomplete destination" placeholder="Enter your destination" type="text">
+        <input id="Submit" placeholder="Submit" type="submit" value="Search a Cab">
+    </div>
+    <button id="get-location-button" onclick="getLocation()">Get My Location</button>
+    <div class="container">
+        <div class="info">At RideEasy, we understand the importance of hassle-free transportation, which is why we've
+            designed a seamless online cab booking platform to cater to all your travel needs.</div>
+        <div class="info1">Whether you're commuting to work, heading out for a night on the town, or catching a flight,
+            RideEasy is your trusted partner for safe, reliable, and comfortable rides.</div>
+        <div class="info2">Experience the convenience of hassle-free cab booking with RideEasy. Book your ride today and
+            travel with confidence!</div>
+    </div>
+    <div class="importance">
+        <h2>Making a difference</h2>
+    </div>
+    <div class="contents">
+        <div class="content c1">
+            <h3>Effortless Travel Starts Here:</h3>
+            <p>Saying goodbye to hailing cabs or waiting in long lines is easy with RideEasy. Our online cab booking
+                platform lets you book a safe and reliable ride in minutes, from the comfort of your couch or office.
+            </p>
+        </div>
+        <div class="content c2">
+            <h3>Your Ride, Your Way:</h3>
+            <p>Booking a cab with RideEasy is too easy. You can track your driver in real-time, pay for your ride
+                conveniently within the app, and even
+                rate your experience to help us improve our service.</p>
+        </div>
+        <div class="content c3">
+            <h3>Ready to Experience Hassle-Free Travel?</h3>
+            <p>Visit our website to book your first ride and experience the RideEasy difference. We're confident you'll
+                be
+                happy you did!</p>
+        </div>
+        <div class="content c4">
+            <h3>Focus on Safety: </h3>
+            <p>At RideEasy,your safety is our top priority.All our drivers undergo rigorous background checks.Our
+                vehicles are also well-maintained and insured for your peace of mind.</p>
+        </div>
+        <div class="content c5">
+            <h3>Transparency and Affordability:</h3>
+            <p>We believe in offering transparent pricing and competitive rates. You'll know the estimated fare upfront
+                before booking your ride, with no hidden fees or surprises</p>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <script src="/js/main.js"></script>
+    <footer>
+        <p>&copy; 2024 Online Cab Booking. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
